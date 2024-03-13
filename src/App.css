@@ -3,6 +3,15 @@
   height: 100%;
 }
 
+.header {
+  background-color: #304674 !important;
+}
+.headerToolBar {
+  text-align: center;
+}
+.headerTypo {
+  width: 100%;
+}
 .MuiContainer-root {
   height: 90vh;
   max-width: 90vw;
@@ -13,7 +22,8 @@
 }
 .box-class .card-wrapper {
   background: #eff0f9;
-  height: 90%;
+  min-height: 90%;
+  overflow-y: scroll;
 }
 
 .chat-box {
@@ -33,4 +43,16 @@
 .chat-box .wrapper svg {
   padding: 15px 0;
   margin-left: 11px;
+}
+
+.google-uploadbtn {
+  margin-top: 10px !important;
+}
+
+.comma-link {
+  margin-bottom: 5px;
+}
+
+#google_doc_input {
+  background-color: #fff;
 }
