@@ -1,0 +1,79 @@
+:root {
+    --chat-primary-bg: #044054ae;
+    --chat-primary-color: #fff;
+    --chat-bubble-bg: #fff;
+    --chat-bubble-color: rgba(0, 0, 0, .8);
+    --chat-scroll-track-color: #f1f1f1;
+    --chat-scroll-color: #7a7676;
+}
+
+.chat-bubble {
+    position: relative;
+    width: 50%;
+    max-width: 80%;
+    border-radius: 10px;
+    background-color: var(--chat-bubble-bg);
+    color: var(--chat-bubble-color);
+    padding: 15px;
+    line-height: 2;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+}
+
+.messages {
+    padding-top: 20px;
+}
+
+.left_bubble {
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.right_bubble {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px !important;
+}
+
+.chat-bubble.right_bubble::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 20px 0;
+    border-color: var(--chat-bubble-bg) transparent transparent;
+    bottom: 35%;
+    right: -25px;
+    transform: rotate(-90deg);
+}
+
+.chat-bubble.left_bubble::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 20px 0;
+    border-color: var(--chat-bubble-bg) transparent transparent;
+    top: 35%;
+    left: -25px;
+    transform: rotate(90deg);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 5px;
+    /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--chat-scroll-color);
+    /* Adjust thumb color */
+    border-radius: 5px;
+    /* Adjust thumb border radius */
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--chat-scroll-track-color);
+    /* Adjust track color */
+}

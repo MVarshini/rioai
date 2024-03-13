@@ -1,0 +1,36 @@
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.MuiContainer-root {
+  height: 90vh;
+  max-width: 90vw;
+}
+.box-class.MuiBox-root {
+  height: 100%;
+  width: 100%;
+}
+.box-class .card-wrapper {
+  background: #eff0f9;
+  height: 90%;
+}
+
+.chat-box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.chat-box .MuiFormControl-root {
+  width: 100%;
+}
+
+.chat-box .wrapper {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-box .wrapper svg {
+  padding: 15px 0;
+  margin-left: 11px;
+}
