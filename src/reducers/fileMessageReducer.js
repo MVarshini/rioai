@@ -1,12 +1,8 @@
 export const initialState = {
   fileMessage: [
     {
-      position: "left_bubble",
-      msg: "Hey",
-    },
-    {
       position: "right_bubble",
-      msg: "Welome to our chat",
+      msg: "Welome to RIOAI chat!",
     },
   ],
 };
@@ -16,6 +12,10 @@ export const fileMessageReducer = (state, action) => {
     case "SET_FILE_MESSAGE":
       return {
         fileMessage: [...state.fileMessage, action.payload],
+      };
+    case "REMOVE_SKELETON":
+      return {
+        fileMessage: state.fileMessage.filter((m) => m.msg !== "skeleton"),
       };
     default:
       return state;

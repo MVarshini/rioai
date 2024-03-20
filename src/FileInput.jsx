@@ -95,7 +95,6 @@ import { uid } from "./helper";
 
 const FileGPT = () => {
   const [selectedFileName, setSelectedFileName] = useState();
-  const [state, dispatch] = useReducer(fileMessageReducer, initialState);
 
   const handleFileUpload = (event) => {
     // get the selected file from the input
@@ -123,7 +122,6 @@ const FileGPT = () => {
   // render a simple input element with an onChange event listener that calls the handleFileUpload function
   return (
     <div>
-      {/* <input type="file" onChange={handleFileUpload} /> */}
       <input
         type="file"
         name="file"

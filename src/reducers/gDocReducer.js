@@ -8,6 +8,10 @@ export const gDocMessageReducer = (state, action) => {
       return {
         gDocMessage: [...state.gDocMessage, action.payload],
       };
+    case "REMOVE_SKELETON":
+      return {
+        gDocMessage: state.gDocMessage.filter((m) => m.msg !== "skeleton"),
+      };
     default:
       return state;
   }
